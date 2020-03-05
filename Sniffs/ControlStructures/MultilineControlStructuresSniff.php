@@ -14,7 +14,7 @@ use PHP_CodeSniffer\Files\File;
 use PHP_CodeSniffer\Sniffs\Sniff;
 use PHP_CodeSniffer\Util\Tokens;
 
-class ControlSignatureSniff implements Sniff
+class MultilineControlStructuresSniff implements Sniff
 {
 
 	/**
@@ -105,7 +105,7 @@ class ControlSignatureSniff implements Sniff
 			}
 		}
 
-		if ($found !== $expected) {
+		if ($found !== $expected && $tokens[$stackPtr]['content']!=="else") {
 			$error = 'Expected %s space(s) after %s keyword; %s found';
 			$data = [
 				$expected,
@@ -251,35 +251,7 @@ class ControlSignatureSniff implements Sniff
 			return;
 		}//end if
 
-		// Single space after closing brace.
-		$found = 1;
-		if ($tokens[($closer + 1)]['code'] !== T_WHITESPACE) {
-			$found = 0;
-		} else if ($tokens[$closer]['line'] !== $tokens[$stackPtr]['line']) {
-			$found = 'newline';
-		} else if ($tokens[($closer + 1)]['content'] !== ' ') {
-			$found = $tokens[($closer + 1)]['length'];
-		}
 
-		if ($found !== 1) {
-			$error = 'Expected 1 space after closing brace; %s found';
-			$data = [$found];
-
-			if ($phpcsFile->findNext(Tokens::$commentTokens, ($closer + 1), $stackPtr) !== false) {
-				// Comment found between closing brace and keyword, don't auto-fix.
-				$phpcsFile->addError($error, $closer, 'SpaceAfterCloseBrace', $data);
-				return;
-			}
-
-			$fix = $phpcsFile->addFixableError($error, $closer, 'SpaceAfterCloseBrace', $data);
-			if ($fix === true) {
-				if ($found === 0) {
-					$phpcsFile->fixer->addContent($closer, ' ');
-				} else {
-					$phpcsFile->fixer->replaceToken(($closer + 1), ' ');
-				}
-			}
-		}
 
 	}//end process()
 

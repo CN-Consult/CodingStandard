@@ -73,5 +73,18 @@
     <!-- this is disabled because it does not allow single-line for loops for -->
     <!--<rule ref="Generic.Formatting.DisallowMultipleStatements"/>-->
 
+    <rule ref="Squiz.Commenting.FunctionComment">
+        <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterCloseBrace"/>
+        <exclude name="Squiz.Commenting.FunctionComment.MissingReturn"/>
+        <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamType"/>
+        <exclude name="Squiz.Commenting.FunctionComment.SpacingAfterParamName"/>
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentAlignment"/>
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentAlignmentExceeded"/>
+        <exclude name="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword"/>
+        <exclude name="Squiz.Commenting.FunctionComment.ParamCommentFullStop"/>
+        <exclude name="Squiz.Commenting.FunctionComment.ScalarTypeHintMissing"/>
+        <exclude name="Squiz.Commenting.FunctionComment.IncorrectParamVarName"/>
+        <exclude name="Squiz.Commenting.FunctionComment.MissingParamName"/>
+    </rule>
 
 </ruleset>

@@ -59,7 +59,6 @@ class BadExamplesTest extends TestCase
 			}
 			$data[]=$currentFile;
 		}
-		var_dump($data);
 		return $data;
 	}
 }

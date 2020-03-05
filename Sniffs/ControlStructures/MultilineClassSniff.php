@@ -13,7 +13,7 @@ use PHP_CodeSniffer\Sniffs\Sniff;
 /**
  * Checks curly brackets after class.
  */
-class CNConsult_Sniffs_ControlStructures_MultilineClassSniff implements Sniff
+class MultilineClassSniff implements Sniff
 {
 
 	/**

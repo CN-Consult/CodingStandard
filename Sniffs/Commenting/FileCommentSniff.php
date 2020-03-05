@@ -13,7 +13,7 @@ use PHP_CodeSniffer\Files\File;
 /**
  * Checks if file comments are as required.
  */
-class CNConsult_Sniffs_Commenting_FileCommentSniff extends \PHP_CodeSniffer\Standards\PEAR\Sniffs\Commenting\FileCommentSniff
+class FileCommentSniff extends \PHP_CodeSniffer\Standards\PEAR\Sniffs\Commenting\FileCommentSniff
 {
 
 	protected $tags = array(

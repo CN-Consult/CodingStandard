@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpcs version="does not matter">
-    <file name="examples/bad/wrong_function.php" errors="4" warnings="0" fixable="2">
-        <error line="10" column="1" source="..Functio.MissingParamTag" severity="5" fixable="0">Doc comment for parameter "$b" missing</error>
-        <error line="12" column="4" source="..Functio.MissingParamComment" severity="5" fixable="0">Missing parameter comment</error>
-        <error line="14" column="22" source="PEAR.Functions.FunctionDeclaration.BraceOnSameLine" severity="5" fixable="1">Opening brace should be on a new line</error>
-        <error line="15" column="5" source="Generic.WhiteSpace.LanguageConstructSpacing.Incorrect" severity="5" fixable="1">Language constructs must be followed by a single space; expected "return "1$a$b"" but found "return"1$a$b""</error>
+    <file name="examples/bad/wrong_function.php" errors="6" warnings="0" fixable="2">
+        <error line="10" column="1" source="Squiz.Commenting.FunctionComment.MissingParamTag" severity="5" fixable="0">Doc comment for parameter "$a" missing</error>
+        <error line="10" column="1" source="Squiz.Commenting.FunctionComment.MissingParamTag" severity="5" fixable="0">Doc comment for parameter "$b" missing</error>
+        <error line="14" column="4" source="Squiz.Commenting.FunctionComment.DuplicateReturn" severity="5" fixable="0">Only 1 @return tag is allowed in a function comment</error>
+        <error line="16" column="1" source="Squiz.Commenting.FunctionComment.TypeHintMissing" severity="5" fixable="0">Type hint "a" missing for </error>
+        <error line="16" column="22" source="PEAR.Functions.FunctionDeclaration.BraceOnSameLine" severity="5" fixable="1">Opening brace should be on a new line</error>
+        <error line="17" column="5" source="Generic.WhiteSpace.LanguageConstructSpacing.Incorrect" severity="5" fixable="1">Language constructs must be followed by a single space; expected "return "1$a$b"" but found "return"1$a$b""</error>
     </file>
 </phpcs>

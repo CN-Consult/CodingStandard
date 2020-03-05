@@ -10,6 +10,8 @@
 /**
  * Test function
  * @param $a
+ * @return
+ * @return blub
  */
 function test($a,$b) {
 	return"1$a$b";

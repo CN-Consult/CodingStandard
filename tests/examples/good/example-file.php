@@ -9,8 +9,8 @@
 
 /**
  * Just a test function.
- * @param $a int What this does
- * @param $b int a number
+ * @param mixed $a What this does
+ * @param int $b A number
  */
 function test($a, $b)
 {

@@ -68,6 +68,10 @@ class ExampleClass
 		{
 			echo "$a is bigger than 0";
 		}
+		else
+		{
+			echo "The world is not enough!";
+		}
 
 		if ($a <0 ) echo "$a is smaller than 0";
 	}
@@ -76,10 +80,10 @@ class ExampleClass
 	 * A method that does something with parameters.
 	 * We allow both orders of parameter type documentation but prefer the first one.
 	 *
-	 * @param int $a int The number of echos
-	 * @param $b string What should be output
+	 * @param int $a The number of echos
+	 * @param string $better What should be output
 	 */
-	final public function withParameters($a, $b)
+	final public function withParameters($a, $better)
 	{
 
 	}

@@ -12,10 +12,10 @@ To use this repository, add it as dev-dependency to your `composer.json`:
 
 Aftewards create a file `phpcs.xml` in your project root and add the following contents:
 ```xml
-<?xml verison="1.0"?>
+<?xml version="1.0"?>
 <ruleset name="MyProject">
   <description>My cool project, using the CN-Consult PHPCS standard</description>
-  <rule ref="CodingStandard" />
+  <rule ref="coding-standard" />
   <config name="installed_paths" value="vendor/cn-consult" />
 </ruleset>
 ```

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpcs version="does not matter">
     <file name="examples/bad/wrong_version_in_filedockblock.php" errors="0" warnings="1" fixable="0">
-        <warning line="5" column="4" source="..CNConsult_Sniffs_Commenting_FileComment.InvalidVersion" severity="5" fixable="0">Invalid version "220" in file comment; consider "0.1" or "0.1.1"    or "2.1" etc. instead</warning>
+        <warning line="5" column="4" source="..FileComment.InvalidVersion" severity="5" fixable="0">Invalid version "220" in file comment; consider "0.1" or "0.1.1"    or "2.1" etc. instead</warning>
     </file>
 </phpcs>
