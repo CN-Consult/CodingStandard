@@ -8,15 +8,15 @@ have no special Sniffs or Code for these languages.
 Usage
 =====
 To use this repository, add it as dev-dependency to your `composer.json`:
-`composer require cn-consult/CodingStandard --dev`.
+`composer require cn-consult/coding-standard --dev`.
 
 Aftewards create a file `phpcs.xml` in your project root and add the following contents:
 ```xml
 <?xml version="1.0"?>
 <ruleset name="MyProject">
-  <description>My cool project, using the CN-Consult PHPCS standard</description>
-  <rule ref="coding-standard" />
-  <config name="installed_paths" value="vendor/cn-consult" />
+    <description>My cool project, using the CN-Consult PHPCS standard</description>
+    <rule ref="vendor/cn-consult/coding-standard" />
+    <exclude-pattern>vendor/*</exclude-pattern>
 </ruleset>
 ```
 Afterwards you can check your code by executing:
