@@ -1,5 +1,5 @@
 {
-  "name": "cn-consult/CodingStandard",
+  "name": "cn-consult/coding-standard",
   "description": "Our Company-Wide Coding Standard based on PHP_CodeSniffer",
   "minimum-stability": "stable",
   "version": "0.5",
