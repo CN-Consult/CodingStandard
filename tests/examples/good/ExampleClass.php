@@ -34,6 +34,8 @@ class ExampleClass
 
 	/**
 	 * Shows how we write foreach loops.
+	 *
+	 * @return bool the result of the operation.
 	 */
 	private function foreachLoopExample()
 	{
@@ -42,6 +44,7 @@ class ExampleClass
 		{
 			echo $name;
 		}
+		return true;
 	}
 
 	/**

@@ -105,7 +105,7 @@ class MultilineControlStructuresSniff implements Sniff
 			}
 		}
 
-		if ($found !== $expected && $tokens[$stackPtr]['content']!=="else") {
+		if ($found !== $expected && $tokens[$stackPtr]['content']!=="else" && $tokens[$stackPtr]['content']!=="try") {
 			$error = 'Expected %s space(s) after %s keyword; %s found';
 			$data = [
 				$expected,

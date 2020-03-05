@@ -9,12 +9,13 @@
 
 /**
  * Just a test function.
- * @param mixed $a What this does
+ * @param boolean $a What this does
  * @param int $b A number
+ * @return bool the result of the operation
  */
 function test($a, $b)
 {
-
+	return true;
 }
 
 test(1,2);
