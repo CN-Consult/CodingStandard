@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/wrong_copyright_years_in_filedockblock.php" errors="0" warnings="1" fixable="0">
+        <warning line="6" column="4" source="..CNConsult_Sniffs_Commenting_FileComment.InvalidCopyright" severity="5" fixable="0">Invalid year span "2020-2017" found; consider "2017-2020" instead</warning>
+    </file>
+</phpcs>

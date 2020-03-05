@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/wrong_copyright_in_filedockblock.php" errors="2" warnings="0" fixable="0">
+        <error line="6" column="4" source="..CNConsult_Sniffs_Commenting_FileComment.CopyrightCNConsult" severity="5" fixable="0">The copyright must contain 'CN-Consult GmbH'</error>
+        <error line="6" column="4" source="..CNConsult_Sniffs_Commenting_FileComment.IncompleteCopyright" severity="5" fixable="0">@copyright tag must contain a year and the name of the copyright holder</error>
+    </file>
+</phpcs>

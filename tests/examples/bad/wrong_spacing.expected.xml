@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/wrong_spacing.php" errors="11" warnings="1" fixable="10">
+        <error line="12" column="1" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword" severity="5" fixable="1">Expected 1 space(s) after FOREACH keyword; 0 found</error>
+        <error line="12" column="1" source="Squiz.ControlStructures.ForEachLoopDeclaration.SpaceAfterOpen" severity="5" fixable="1">Space found after opening bracket of FOREACH loop</error>
+        <error line="12" column="1" source="Squiz.ControlStructures.ForEachLoopDeclaration.SpaceBeforeClose" severity="5" fixable="1">Space found before closing bracket of FOREACH loop</error>
+        <error line="12" column="20" source="Squiz.ControlStructures.ControlSignature.CurlyBracketOpenOnNextLine" severity="5" fixable="0">Curly bracket of foreach should be on next line after foreach.</error>
+        <error line="12" column="20" source="Squiz.ControlStructures.ControlSignature.NewlineAfterOpenBrace" severity="5" fixable="1">Newline required after opening brace</error>
+        <error line="14" column="6" source="Generic.Formatting.SpaceAfterCast.TooMuchSpace" severity="5" fixable="1">Expected 0 space(s) after cast statement; 1 found</error>
+        <error line="16" column="5" source="Generic.Formatting.SpaceAfterNot.Incorrect" severity="5" fixable="1">Expected 0 space(s) after NOT operator; 1 found</error>
+        <error line="18" column="1" source="Generic.WhiteSpace.LanguageConstructSpacing.Incorrect" severity="5" fixable="1">Language constructs must be followed by a single space; expected "echo "without space is bad"" but found "echo"without space is bad""</error>
+        <warning line="20" column="1" source="Generic.CodeAnalysis.UnconditionalIfStatement.Found" severity="5" fixable="0">Avoid IF statements that are always true or false</warning>
+        <error line="20" column="1" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword" severity="5" fixable="1">Expected 1 space(s) after IF keyword; 0 found</error>
+        <error line="22" column="34" source="Squiz.WhiteSpace.SemicolonSpacing.Incorrect" severity="5" fixable="1">Space found before semicolon; expected ""no space before semicolon";" but found ""no space before semicolon" ;"</error>
+        <error line="24" column="1" source="Squiz.ControlStructures.ControlSignature.SpaceAfterKeyword" severity="5" fixable="1">Expected 1 space(s) after FOR keyword; 0 found</error>
+    </file>
+</phpcs>

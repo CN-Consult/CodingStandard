@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/wrong_braces.php" errors="5" warnings="1" fixable="0">
+        <error line="11" column="25" source="Squiz.ControlStructures.ControlSignature.CurlyBracketOpenOnNextLine" severity="5" fixable="0">Curly bracket of for should be on next line after for.</error>
+        <warning line="15" column="1" source="Generic.CodeAnalysis.UnconditionalIfStatement.Found" severity="5" fixable="0">Avoid IF statements that are always true or false</warning>
+        <error line="15" column="11" source="Squiz.ControlStructures.ControlSignature.CurlyBracketOpenOnNextLine" severity="5" fixable="0">Curly bracket of if should be on next line after if.</error>
+        <error line="17" column="8" source="Squiz.ControlStructures.ControlSignature.CurlyBracketOpenOnNextLine" severity="5" fixable="0">Curly bracket of else should be on next line after else.</error>
+        <error line="21" column="20" source="Squiz.ControlStructures.ControlSignature.CurlyBracketOpenOnNextLine" severity="5" fixable="0">Curly bracket of foreach should be on next line after foreach.</error>
+        <error line="25" column="17" source="Squiz.ControlStructures.ControlSignature.CurlyBracketOpenOnNextLine" severity="5" fixable="0">Curly bracket of while should be on next line after while.</error>
+    </file>
+</phpcs>

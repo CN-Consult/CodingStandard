@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/missingfiledockblock.php" errors="1" warnings="0" fixable="0">
+        <error line="2" column="1" source="..CNConsult_Sniffs_Commenting_FileComment.Missing" severity="5" fixable="0">Missing file doc comment</error>
+    </file>
+</phpcs>

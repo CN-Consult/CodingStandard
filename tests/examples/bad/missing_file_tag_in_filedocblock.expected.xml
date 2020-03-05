@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/missing_file_tag_in_filedocblock.php" errors="1" warnings="0" fixable="0">
+        <error line="8" column="2" source="..CNConsult_Sniffs_Commenting_FileComment.MissingFileTag" severity="5" fixable="0">Missing @file tag in file comment</error>
+    </file>
+</phpcs>

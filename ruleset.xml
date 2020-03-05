@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<ruleset name="CodingStandard">
+    <description>Defines the CN-Consult coding standard.</description>
+    <!-- Note: In addition to the rules referenced in this file, the custom-built Sniffs are automatically executed when testing code. -->
+
+    <arg name="tab-width" value="4"/>
+
+
+    <!-- SPACING =============== -->
+    <!-- we want a space after language constructs like echo, return, namespace, etc. -->
+    <rule ref="Generic.WhiteSpace.LanguageConstructSpacing"/>
+    <!-- we want no space after a cast -->
+    <rule ref="Generic.Formatting.SpaceAfterCast">
+        <properties>
+            <property name="spacing" value="0"/>
+        </properties>
+    </rule>
+    <!-- We want no space after a not: ! -->
+    <rule ref="Generic.Formatting.SpaceAfterNot">
+        <properties>
+            <property name="spacing" value="0"/>
+        </properties>
+    </rule>
+    <!-- we want no space before ; at the end of statements -->
+    <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+    <!-- We want to make sure that indentions based on scope are correctly done -->
+    <rule ref="Generic.WhiteSpace.ScopeIndent">
+        <properties>
+            <property name="indent" value="4"/>
+            <property name="tabIndent" value="true"/>
+        </properties>
+    </rule>
+    <!-- Verifies that there is a space between each condition of foreach loops. -->
+    <rule ref="Squiz.ControlStructures.ForEachLoopDeclaration"/>
+
+
+    <!-- FUNCTIONS ============== -->
+    <!-- function openening braces should be on next line for functions and on same line for closures -->
+    <rule ref="PEAR.Functions.FunctionDeclaration"/>
+    <!-- function calls should have spaces after, but no spaces after/before () -->
+    <!--<rule ref="Generic.Functions.FunctionCallArgumentSpacing"/>-->
+
+
+    <!-- Classes ================ -->
+    <!-- Classes must have PascalCase names -->
+    <rule ref="Squiz.Classes.ValidClassName"/>
+    <!-- disallows PHP4-Style constructors -->
+    <rule ref="Generic.NamingConventions.ConstructorName"/>
+    <!-- Spacing between functions inside a class -->
+    <rule ref="Squiz.WhiteSpace.FunctionSpacing">
+        <properties>
+            <property name="spacing" value="1"/>
+            <property name="spacingAfterLast" value="0"/>
+            <property name="spacingBeforeFirst" value="0"/>
+        </properties>
+    </rule>
+    <!-- ensures that final/static and visibility keywords are in the correct order -->
+    <rule ref="PSR2.Methods.MethodDeclaration"/>
+
+    <!-- OTHER FORMATTING ========= -->
+    <!-- line endings should be \n not \n\r or similar -->
+    <rule ref="Generic.Files.LineEndings"/>
+
+    <!-- BAD CODING STYLE ========= -->
+    <!-- don't allow to use the same counting variable in nested loops -->
+    <rule ref="Generic.CodeAnalysis.JumbledIncrementer"/>
+    <!-- don't allow if (true) or if (false) -->
+    <rule ref="Generic.CodeAnalysis.UnconditionalIfStatement"/>
+    <!-- Detects for-loops that can be simplified to a while-loop. -->
+    <rule ref="Generic.CodeAnalysis.ForLoopShouldBeWhileLoop"/>
+    <rule ref="Generic.PHP.ForbiddenFunctions"/>
+    <rule ref="Generic.PHP.DisallowShortOpenTag"/>
+    <!-- this is disabled because it does not allow single-line for loops for -->
+    <!--<rule ref="Generic.Formatting.DisallowMultipleStatements"/>-->
+
+
+</ruleset>

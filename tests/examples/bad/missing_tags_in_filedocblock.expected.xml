@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/missing_tags_in_filedocblock.php" errors="4" warnings="0" fixable="0">
+        <error line="5" column="2" source="..CNConsult_Sniffs_Commenting_FileComment.MissingFileTag" severity="5" fixable="0">Missing @file tag in file comment</error>
+        <error line="5" column="2" source="..CNConsult_Sniffs_Commenting_FileComment.MissingVersionTag" severity="5" fixable="0">Missing @version tag in file comment</error>
+        <error line="5" column="2" source="..CNConsult_Sniffs_Commenting_FileComment.MissingCopyrightTag" severity="5" fixable="0">Missing @copyright tag in file comment</error>
+        <error line="5" column="2" source="..CNConsult_Sniffs_Commenting_FileComment.MissingAuthorTag" severity="5" fixable="0">Missing @author tag in file comment</error>
+    </file>
+</phpcs>

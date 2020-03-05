@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<phpunit colors="true">
+    <testsuites>
+        <testsuite name="CN-Consult coding standard test-suite">
+            <directory>.</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

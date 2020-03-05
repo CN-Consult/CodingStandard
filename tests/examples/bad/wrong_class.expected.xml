@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/wrong_class.php" errors="3" warnings="0" fixable="0">
+        <error line="12" column="1" source="..CNConsult_Sniffs_Commenting_ClassComment.Missing" severity="5" fixable="0">Missing doc comment for class testname</error>
+        <error line="12" column="1" source="Squiz.Classes.ValidClassName.NotCamelCaps" severity="5" fixable="0">Class name "testname" is not in PascalCase format</error>
+        <error line="12" column="16" source="..CNConsult_Sniffs_ControlStructures_MultilineClass.CurlyBracketOpenOnNextLine" severity="5" fixable="0">Curly bracket of class should be on next line after class.</error>
+    </file>
+</phpcs>

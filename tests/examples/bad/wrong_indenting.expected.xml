@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpcs version="does not matter">
+    <file name="examples/bad/wrong_indenting.php" errors="2" warnings="0" fixable="2">
+        <error line="16" column="3" source="Generic.WhiteSpace.ScopeIndent.Incorrect" severity="5" fixable="1">Line indented incorrectly; expected at least 1 tabs, found 0</error>
+        <error line="19" column="7" source="Generic.WhiteSpace.ScopeIndent.Incorrect" severity="5" fixable="1">Line indented incorrectly; expected at least 2 tabs, found 1</error>
+    </file>
+</phpcs>
