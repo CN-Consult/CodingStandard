@@ -29,7 +29,7 @@ use PHP_CodeSniffer\Util\Tokens;
 class ClassCommentSniff implements Sniff
 {
 	/** @var array The tags that should be allowed in doc-block tags. */
-	private $allowedTags=["@deprecated","@link","@see","@code","@endcode","@ingroup",
+	private $allowedTags=["@deprecated","@link","@see","@begincode","@endcode","@ingroup",
 		 					"@componentBindings","@createRights","@listRights","@modelName","@duplicateFieldName","@enableModelChecks"];
 
 	/**
