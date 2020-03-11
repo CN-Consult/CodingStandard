@@ -8,7 +8,7 @@ have no special Sniffs or Code for these languages.
 Usage
 =====
 To use this repository, add it as dev-dependency to your `composer.json`:
-`composer require cn-consult/coding-standard --dev`.
+`composer require --dev cn-consult/coding-standard:dev-master`.
 
 Aftewards create a file `phpcs.xml` in your project root and add the following contents:
 ```xml
